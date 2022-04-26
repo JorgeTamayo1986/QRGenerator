@@ -44,7 +44,7 @@ namespace MatracaBeer.QRGenerator
             this.btnGenerate.Location = new System.Drawing.Point(15, 411);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(75, 28);
-            this.btnGenerate.TabIndex = 0;
+            this.btnGenerate.TabIndex = 1;
             this.btnGenerate.Text = "Generar &QR";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
@@ -54,7 +54,7 @@ namespace MatracaBeer.QRGenerator
             this.btnSave.Location = new System.Drawing.Point(127, 411);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 28);
-            this.btnSave.TabIndex = 1;
+            this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&Guardar";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -62,24 +62,25 @@ namespace MatracaBeer.QRGenerator
             // QRImageBox
             // 
             this.QRImageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.QRImageBox.Location = new System.Drawing.Point(12, 12);
+            this.QRImageBox.Location = new System.Drawing.Point(50, 22);
             this.QRImageBox.Name = "QRImageBox";
-            this.QRImageBox.Size = new System.Drawing.Size(271, 253);
+            this.QRImageBox.Size = new System.Drawing.Size(200, 200);
+            this.QRImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QRImageBox.TabIndex = 2;
             this.QRImageBox.TabStop = false;
             // 
             // txtInfo
             // 
-            this.txtInfo.Location = new System.Drawing.Point(12, 305);
+            this.txtInfo.Location = new System.Drawing.Point(12, 263);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(271, 100);
-            this.txtInfo.TabIndex = 3;
+            this.txtInfo.Size = new System.Drawing.Size(271, 129);
+            this.txtInfo.TabIndex = 0;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(12, 289);
+            this.lblTitle.Location = new System.Drawing.Point(12, 238);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(65, 13);
             this.lblTitle.TabIndex = 4;
@@ -90,7 +91,7 @@ namespace MatracaBeer.QRGenerator
             this.btnClean.Location = new System.Drawing.Point(208, 411);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(75, 28);
-            this.btnClean.TabIndex = 5;
+            this.btnClean.TabIndex = 3;
             this.btnClean.Text = "&Limpiar";
             this.btnClean.UseVisualStyleBackColor = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
